@@ -7,4 +7,6 @@ Repository of the student of the Institute of Telecommunication Systems, **group
 - Laba 1 - 5;
 - Laba 2 - 5;
 - Laba 3 - under review;
-- Laba 4 - under review.
+- Laba 4 - under review;
+- Laba 5 - under review;
+- Laba 6 - under review.
