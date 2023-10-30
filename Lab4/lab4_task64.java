@@ -23,7 +23,7 @@ public class lab4_task64 {
                 } else if (originalArray[i] > 0) {
                     modifiedValue = originalArray[i] - 3;
                 } else {
-                    modifiedValue = -2;
+                    modifiedValue = -3;
                 }
 
                 modifiedArray[i] = modifiedValue;
