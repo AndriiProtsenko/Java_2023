@@ -2,10 +2,11 @@ import java.util.Arrays;
 
 public class lab5 {
     public static void main(String[] args) {
-        long[] a = {-38, 12, -22, 29, -7, 44, -47, 23, 50, -16};
-        long[] b = {-23, 45, -12, 34, -48, 17, 29, -50, 8, 42};
-        printInsertionSortedArray(a);
-        printBubbleSortedArray(b);
+        long[] a = {21, -72, 2, 349, 232, -84, 68, -1, 23, 25};
+        long[] b = {-34, -54, 131, 56, -12, -27, 66, 42, -7, 42};
+
+        printSortedArray("Insertion Sort", a, insertionSort(a));
+        printSortedArray("Bubble Sort", b, bubbleSort(b));
     }
 
     static long[] insertionSort(long[] arr) {
@@ -35,11 +36,8 @@ public class lab5 {
         return arr;
     }
 
-    static void printInsertionSortedArray(long[] arr) {
-        System.out.println("array:" + Arrays.toString(arr) + " new array:" + Arrays.toString(insertionSort(arr)));
-    }
-
-    static void printBubbleSortedArray(long[] arr) {
-        System.out.println("array:" + Arrays.toString(arr) + " new array:" + Arrays.toString(bubbleSort(arr)));
+    static void printSortedArray(String sortMethod, long[] originalArray, long[] sortedArray) {
+        System.out.println(sortMethod + ":\nOriginal array: " + Arrays.toString(originalArray) +
+                "\nSorted array: " + Arrays.toString(sortedArray) + "\n");
     }
 }
