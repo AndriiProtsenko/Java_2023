@@ -6,6 +6,7 @@
 In this work, we wrote code for sorting an array using various methods and different sorting orders.
 
 **Resalts:**
+
 **Insertion Sort:**
 - Sorting order - in descending order;
 - Original array: [349, 232, 68, 25, 23, 21, 2, -1, -72, -84]
