@@ -2,7 +2,8 @@ public class lab6_task6 {
     public static void main(String[] args) {
         String octalString = "10";
         int decimalNumber = octStringToInt(octalString);
-        System.out.println(decimalNumber);
+        System.out.println("Значення String: " + octalString);
+        System.out.println("Значення int: " + decimalNumber);
     }
 
     public static int octStringToInt(String s) {
