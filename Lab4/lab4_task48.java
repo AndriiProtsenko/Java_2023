@@ -2,27 +2,28 @@ import java.util.Scanner;
 
 public class lab4_task48 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter the array size: ");
-        int n = scanner.nextInt();
+        try (Scanner scanner = new Scanner(System.in)) {
+            System.out.print("Enter the array size: ");
+            int n = scanner.nextInt();
 
-        if (n <= 0) {
-            throw new IllegalArgumentException("Array size must be greater than 0");
-        }
-
-        int[] array = new int[n];
-        System.out.println("Enter the array elements:");
-
-        for (int i = 0; i < n; i++) {
-            array[i] = scanner.nextInt();
-            if (i % 2 == 0 && array[i] < 0) {
-                System.out.println("Error: Number at even index is negative!");
-                break;
+            if (n <= 0) {
+                throw new IllegalArgumentException("Array size must be greater than 0");
             }
-        }
 
-        double geometricMean = findGeometricMeanOfEvenMultipleOfFiveElements(array);
-        System.out.println("Geometric mean of even elements with indices multiple of 5: " + geometricMean);
+            int[] array = new int[n];
+            System.out.println("Enter the array elements:");
+
+            for (int i = 0; i < n; i++) {
+                array[i] = scanner.nextInt();
+                if (i % 2 == 0 && array[i] < 0) {
+                    System.out.println("Error: Number at even index is negative!");
+                    break;
+                }
+            }
+
+            double geometricMean = findGeometricMeanOfEvenMultipleOfFiveElements(array);
+            System.out.println("Geometric mean of even elements with indices multiple of 5: " + geometricMean);
+        }
     }
 
     public static double findGeometricMeanOfEvenMultipleOfFiveElements(int[] array) {
