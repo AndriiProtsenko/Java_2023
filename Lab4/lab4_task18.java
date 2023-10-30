@@ -18,7 +18,7 @@ public class lab4_task18 {
             }
 
             int minAbsValue = findMinAbsoluteValue(array);
-            System.out.println("Minimum absolute value in the array: " + minAbsValue);
+            System.out.println("Minimum absolute value in the arrayu: " + minAbsValue);
         }
     }
 
