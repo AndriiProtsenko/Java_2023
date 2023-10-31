@@ -1,6 +1,6 @@
 public class lab6_task6 {
     public static void main(String[] args) {
-        String octalString = "10";
+        String octalString = "10"; // 20 - 16, 377 - 255
         int decimalNumber = octStringToInt(octalString);
         System.out.println("Значення String: " + octalString);
         System.out.println("Значення int: " + decimalNumber);
