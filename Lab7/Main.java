@@ -1,5 +1,3 @@
-package Lab7;
-
 import java.util.*;
 
 class Database {
