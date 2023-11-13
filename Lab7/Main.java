@@ -34,20 +34,23 @@ class Database {
         return false;
     }
 
-    public List<Actor> getCoActors(Actor targetActor) {
-        Set<Actor> coActors = new HashSet<>();
+   public List<Actor> getCoActors(Actor targetActor) {
+    Set<Actor> coActors = new HashSet<>();
 
-        for (Movie movie : targetActor.getMovies()) {
-            Iterator<Actor> actorIterator = movie.getActors().iterator();
-            while (actorIterator.hasNext()) {
-                Actor actor = actorIterator.next();
-                if (!actor.equals(targetActor)) {
-                    coActors.add(actor);
-                }
+    Iterator<Movie> movieIterator = targetActor.getMovies().iterator();
+    while (movieIterator.hasNext()) {
+        Movie movie = movieIterator.next();
+        
+        Iterator<Actor> actorIterator = movie.getActors().iterator();
+        while (actorIterator.hasNext()) {
+            Actor actor = actorIterator.next();
+            if (!actor.equals(targetActor)) {
+                coActors.add(actor);
             }
         }
+    }
 
-        return new ArrayList<>(coActors);
+    return new ArrayList<>(coActors);
     }
 
     public Movie findMovieWithMostActors() {
