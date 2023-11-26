@@ -12,7 +12,7 @@ public class Main {
         Movie movie1 = new Movie("Movie1");
         Movie movie2 = new Movie("Movie2");
 
-        movie1.addActor(actor1);
+         movie1.addActor(actor1);
         movie1.addActor(actor2);
         movie1.addActor(actor3);
 
