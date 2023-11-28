@@ -4,6 +4,9 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 
+import Lab8.Actor;
+import Lab8.Movie;
+
 public class Database {
     private List<Movie> movies;
     private List<Actor> actors;

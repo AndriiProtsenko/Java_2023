@@ -1,4 +1,9 @@
 import java.util.List;
+
+import Lab8.Actor;
+import Lab8.Database;
+import Lab8.Movie;
+
 import java.util.ArrayList;
 
 public class Main {
@@ -11,6 +16,7 @@ public class Main {
 
         Movie movie1 = new Movie("Movie1");
         Movie movie2 = new Movie("Movie2");
+        
 
          movie1.addActor(actor1);
         movie1.addActor(actor2);
