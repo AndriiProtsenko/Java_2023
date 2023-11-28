@@ -58,16 +58,17 @@ public class Database {
     }
 
     public Movie findMovieWithMostActors() {
-        Iterator<Movie> iterator = movies.iterator();
-        Movie movieWithMostActors = iterator.next();
-
+        Iterator iterator = movies.iterator();
+        Movie movieWithMostActors = (Movie) iterator.next();  
+    
         while (iterator.hasNext()) {
-            Movie currentMovie = iterator.next();
+            Movie currentMovie = (Movie) iterator.next();  
             if (currentMovie.getActors().size() > movieWithMostActors.getActors().size()) {
                 movieWithMostActors = currentMovie;
             }
         }
-
+    
         return movieWithMostActors;
     }
+    
 }

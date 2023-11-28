@@ -8,6 +8,7 @@ public class Main {
         Actor actor1 = new Actor("Actor1");
         Actor actor2 = new Actor("Actor2");
         Actor actor3 = new Actor("Actor3");
+        Actor actor4 = new Actor("Actor4");
 
         Movie movie1 = new Movie("Movie1");
         Movie movie2 = new Movie("Movie2");
@@ -18,6 +19,8 @@ public class Main {
 
         movie2.addActor(actor1);
         movie2.addActor(actor2);
+        movie2.addActor(actor3);
+        movie2.addActor(actor4);
 
         actor1.addMovie(movie1);
         actor1.addMovie(movie2);
