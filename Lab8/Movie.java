@@ -1,20 +1,20 @@
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashSet;
+import java.util.Set;
 
 public class Movie {
     private String title;
-    private List<Actor> actors;
+    private Set<Actor> actors;
 
     public Movie(String title) {
         this.title = title;
-        this.actors = new ArrayList<>();
+        this.actors = new HashSet<>();
     }
 
     public String getTitle() {
         return title;
     }
 
-    public List<Actor> getActors() {
+    public Set<Actor> getActors() {
         return actors;
     }
 

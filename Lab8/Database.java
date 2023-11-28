@@ -5,19 +5,19 @@ import java.util.List;
 import java.util.Set;
 
 public class Database {
-    private List<Movie> movies;
-    private List<Actor> actors;
+    private Set<Movie> movies;
+    private Set<Actor> actors;
 
     public Database() {
-        this.movies = new ArrayList<>();
-        this.actors = new ArrayList<>();
+        this.movies = new HashSet<>();
+        this.actors = new HashSet<>();
     }
 
-    public List<Movie> getMovies() {
+    public Set<Movie> getMovies() {
         return movies;
     }
 
-    public List<Actor> getActors() {
+    public Set<Actor> getActors() {
         return actors;
     }
 
